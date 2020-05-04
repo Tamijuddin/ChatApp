@@ -4,8 +4,8 @@
     <b-navbar-brand class="heading">CHAT-PAGE</b-navbar-brand>
     <router-link to="/" inline exact class="routerlink">Exit Chat</router-link></b-navbar>
 
-    <div class="chat-box">
-        <ul style="list-style-type:none" v-chat-scroll >
+    <div class="chat-box" v-chat-scroll>
+        <ul style="list-style-type:none"  >
             <li v-for="message in messages" v-bind:key="message.id">
             <label style="font-size:0.8em;margin-bottom:0.0rem">{{message.name.toUpperCase()}} | </label>
             <label style="font-size:0.7em;margin-bottom: 0.0rem">{{message.time}} </label><br>
