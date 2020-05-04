@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div class="new-msg">
         <b-form @submit.prevent="addMessage">
-                <b-input-group prepend="Message" class="mt-3">
+                <b-input-group class="mt-3">
                 <b-form-input type="text" v-model="newMsg" placeholder="Enter your message..."></b-form-input>
+                <b-button type="submit" variant="success">Send</b-button>
             </b-input-group>
             <p v-if="feedback" style="color:red">{{ feedback }}</p>
         </b-form>
@@ -44,3 +45,10 @@ export default {
     }
 }
 </script>
+
+<style>
+.new-msg{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+</style>
