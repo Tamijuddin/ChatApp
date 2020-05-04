@@ -64,7 +64,7 @@ export default {
 }
 .chat-box{
     max-width: initial;
-    max-height: 450px;
+    max-height: 550px;
     overflow: auto;
     text-align: left;
     background-color:white;
